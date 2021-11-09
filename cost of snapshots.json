@@ -1,0 +1,12 @@
+{"03e543c9-78f2-4bd4-8e7a-37d19238b912": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1636134143320,
+   "name": "MM - VM Cost of Reclaimable Snapshot Space",
+   "formula": "${this, metric=summary|snapshotSpace}*${adaptertype=VMWARE, objecttype=Datastore, objectname=wdc-08-vc20c01-vsan, identifiers={VMEntityObjectID=datastore-1084, VMEntityVCID=9cf3faef-6af5-46f4-8b16-39ff0388768c}, metric=cost|storageRate, depth=1}",
+   "description": "",
+   "unitId": "currencymonth",
+   "modifiedBy": "287ed085-c6ca-4255-b69c-956f1665ed51"
+}}
