@@ -1,0 +1,12 @@
+{"d220fe66-9ed0-4d62-b6a2-8df6d5c118af": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1636131390087,
+   "name": "MM - Cost of VM Snapshot",
+   "formula": "${this, metric=diskspace|snapshot}*5.75",
+   "description": "",
+   "unitId": "currency",
+   "modifiedBy": "287ed085-c6ca-4255-b69c-956f1665ed51"
+}}
